@@ -83,3 +83,41 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+# Hotel Management App
+
+This is a simple hotel management system built with NestJS. It includes basic CRUD operations for managing hotels.
+
+## How to Run Locally
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up PostgreSQL database
+4. Run the app: `npm run start`
+
+## API Endpoints
+- `GET /hotels`: List all hotels
+- `GET /hotels/:id`: Get a single hotel
+- `POST /hotels`: Create a new hotel
+- `PUT /hotels/:id`: Update a hotel
+- `DELETE /hotels/:id`: Delete a hotel
+
+## Deployment Instructions
+This app is deployed on Google Cloud Run. You can build the Docker image using:
+
+```bash
+gcloud builds submit --tag gcr.io/your-project-id/hotel-management
+
+
+
+
+### Step 11: Push to GitHub
+Create a GitHub repository and push your code:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <your-github-repo-url>
+git push -u origin master
+

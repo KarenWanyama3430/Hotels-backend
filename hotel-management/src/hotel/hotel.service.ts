@@ -14,8 +14,8 @@ export class HotelService {
     return this.hotelRepository.find();
   }
 
-  findOne(id: number): Promise<Hotel> {
-    return this.hotelRepository.findOne(id);
+  // findOne(id: number): Promise<Hotel> {
+    
   }
 
   create(hotel: Hotel): Promise<Hotel> {
